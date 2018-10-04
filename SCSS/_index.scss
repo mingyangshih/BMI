@@ -1,0 +1,152 @@
+@charset "utf-8";
+html{
+    background: #f5f5f5;
+}
+
+.wrap{
+    max-width: 100%;
+}
+.w1024{
+    max-width: 100%;
+    background: #424242;
+}
+.header{
+    max-width: 1024px;
+    margin: 0 auto;
+    background: #424242;
+    height: 300px;
+    .logo{
+        margin-left: 14.894%;
+        margin-top: 92px;
+    }
+    form{
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 74px;
+        margin-left: 10.4726%;
+        margin-right: 5.1758%;
+    }
+    .height,.weight{
+        @extend %label-setting;
+    }
+    .input-height,.input-weight{
+        @extend %input-setting;
+    }
+    .result{
+        width: 120px;
+        height: 120px;
+        background: #FFD366;
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 92px;
+        border-radius: 50%;
+        box-sizing: border-box;
+        padding-top: 46px;
+        cursor: pointer;
+        &:hover{
+            box-shadow: 0 1px 6px 3px rgba(255,196,50,0.64);
+        }
+        .p-result{
+            text-align: center;
+            font-family: $font-en;
+            font-size: 24px;
+            color: #424242;
+            line-height: 25px;
+            text-transform: capitalize;
+        }    
+    }  
+    .green{
+        border: 6px solid #86D73F;
+        background: #424242;
+        position: relative;
+        &:after{
+            content: "理想";
+            color: #86D73F;
+            font-family: $font-ch;
+            font-size: 32px;
+            display: inline-block;
+            position: absolute;
+            left:140px;
+            top:40px;
+            width: 64px;
+        }
+        .p-result{
+            color: #86D73F;
+            margin-top: -13px;
+            p{
+                font-size:14px;
+            }
+        }
+        .img{
+            background: #86D73F;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-image: url(../images/icons_loop.png);
+            background-position: center center;
+            background-repeat: no-repeat;
+            position: absolute;
+            right:0px;
+            bottom:0px;
+        }
+    } 
+}
+// main
+.all-result{
+    max-width: 1024px;
+    margin: 0 auto;
+    .bmirecord{
+        font-family: $font-ch;
+        font-size: 24px;
+        display: block;
+        margin-top: 48px;
+        margin-bottom: 36px;
+        width: 100%;
+        text-align: center;
+    }
+    .eachrecord{
+        background: #FFFFFF;
+        height: 62px;
+        width: 60.9375%;
+        margin: 0 auto 16px auto;
+        font-family: $font-ch;
+        box-sizing: border-box;       
+        
+        p{
+            display: inline-block;
+        }
+        p:nth-child(odd){
+            margin-top: 21px;
+            font-size: 20px;
+            color: #4A4A4A;
+            margin-right: 42px;
+        }
+        p:nth-child(even){
+            margin-top: 25px;
+            margin-right: 7px;
+            vertical-align: top;
+            font-size: 12px;
+            color: #424242;
+        }
+        p:nth-child(1){
+            margin-left: 19px;
+            margin-right: 70px;
+        }
+        p:nth-child(7){
+            margin-right: 52px;
+        }
+    }
+    .eachrecord.green{
+        border-left: 7px solid  #86D73F;
+    }
+}
+
+
+.footer{
+   width: 100%;
+   background:  #FFD366;
+   height: 90px;
+   @include bg('BMICLogo_B','png');
+   background-repeat: no-repeat;
+   background-position: center center;
+}

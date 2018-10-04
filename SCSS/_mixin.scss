@@ -1,0 +1,39 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+$images:  '../images';
+$font-en:  'Open Sans';
+$font-ch:  'Noto Sans TC';
+$font-awe: "Font Awesome 5 Free";
+
+%label-setting{
+    font-family: $font-ch;
+    display: block;
+    color: #FFD366;
+    font-size: 18px;
+    margin-bottom: 7px;
+}
+%input-setting{
+    display: block;
+    font-family: $font-ch;
+    background: rgba(255,255,255,0.18);
+    border: 2px solid #FFD366;
+    color: rgba(255, 255, 255, 0.5);;
+    width: 250px;
+    height: 40px;
+    font-size: 24px;
+    line-height: 28px;
+    box-sizing: border-box;
+    padding-left: 14px;
+    border-radius: 10px;
+    margin-bottom: 23px;
+    outline: none;
+    &:hover{
+        box-shadow: 0 1px 6px 3px rgba(255,196,50,0.64);
+    }
+}
+
+
+@mixin bg($name,$bg){ 
+    background-image: url("#{$images}/#{$name}.#{$bg}");
+    // width: image-width("../images/#{$name}.#{$bg}");
+    // height: image-height("../images/#{$name}.#{$bg}");
+}
