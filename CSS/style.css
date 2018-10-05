@@ -1,6 +1,5 @@
 @charset "UTF-8";
 @import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
-/* line 1, ../SCSS/_reset.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -19,54 +18,38 @@ time, mark, audio, video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline;
-}
+  vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
-/* line 22, ../SCSS/_reset.scss */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-  display: block;
-}
+  display: block; }
 
-/* line 26, ../SCSS/_reset.scss */
 body {
-  line-height: 1;
-}
+  line-height: 1; }
 
-/* line 29, ../SCSS/_reset.scss */
 ol, ul {
-  list-style: none;
-}
+  list-style: none; }
 
-/* line 32, ../SCSS/_reset.scss */
 blockquote, q {
-  quotes: none;
-}
+  quotes: none; }
 
-/* line 35, ../SCSS/_reset.scss */
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
-  content: none;
-}
+  content: none; }
 
-/* line 40, ../SCSS/_reset.scss */
 table {
   border-collapse: collapse;
-  border-spacing: 0;
-}
+  border-spacing: 0; }
 
-/* line 7, ../SCSS/_mixin.scss */
 .header .height, .header .weight {
   font-family: "Noto Sans TC";
   display: block;
   color: #FFD366;
   font-size: 18px;
-  margin-bottom: 7px;
-}
+  margin-bottom: 7px; }
 
-/* line 14, ../SCSS/_mixin.scss */
 .header .input-height, .header .input-weight {
   display: block;
   font-family: "Noto Sans TC";
@@ -77,183 +60,295 @@ table {
   height: 40px;
   font-size: 24px;
   line-height: 28px;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding-left: 14px;
   border-radius: 10px;
   margin-bottom: 23px;
-  outline: none;
-}
-/* line 29, ../SCSS/_mixin.scss */
-.header .input-height:hover, .header .input-weight:hover {
-  box-shadow: 0 1px 6px 3px rgba(255, 196, 50, 0.64);
-}
+  outline: none; }
+  .header .input-height:hover, .header .input-weight:hover {
+    -webkit-box-shadow: 0 1px 6px 3px rgba(255, 196, 50, 0.64);
+    box-shadow: 0 1px 6px 3px rgba(255, 196, 50, 0.64); }
 
-/* line 2, ../SCSS/_index.scss */
 html {
-  background: #f5f5f5;
-}
+  background: #f5f5f5; }
 
-/* line 6, ../SCSS/_index.scss */
 .wrap {
-  max-width: 100%;
-}
+  max-width: 100%; }
 
-/* line 9, ../SCSS/_index.scss */
 .w1024 {
   max-width: 100%;
-  background: #424242;
-}
+  background: #424242; }
 
-/* line 13, ../SCSS/_index.scss */
 .header {
   max-width: 1024px;
   margin: 0 auto;
   background: #424242;
-  height: 300px;
-}
-/* line 18, ../SCSS/_index.scss */
-.header .logo {
-  margin-left: 14.894%;
-  margin-top: 92px;
-}
-/* line 22, ../SCSS/_index.scss */
-.header form {
-  display: inline-block;
-  vertical-align: top;
-  margin-top: 74px;
-  margin-left: 10.4726%;
-  margin-right: 5.1758%;
-}
-/* line 35, ../SCSS/_index.scss */
-.header .result {
-  width: 120px;
-  height: 120px;
-  background: #FFD366;
-  display: inline-block;
-  vertical-align: top;
-  margin-top: 92px;
-  border-radius: 50%;
-  box-sizing: border-box;
-  padding-top: 46px;
-  cursor: pointer;
-}
-/* line 46, ../SCSS/_index.scss */
-.header .result:hover {
-  box-shadow: 0 1px 6px 3px rgba(255, 196, 50, 0.64);
-}
-/* line 49, ../SCSS/_index.scss */
-.header .result .p-result {
-  text-align: center;
-  font-family: "Open Sans";
-  font-size: 24px;
-  color: #424242;
-  line-height: 25px;
-  text-transform: capitalize;
-}
-/* line 58, ../SCSS/_index.scss */
-.header .green {
-  border: 6px solid #86D73F;
-  background: #424242;
-  position: relative;
-}
-/* line 62, ../SCSS/_index.scss */
-.header .green:after {
-  content: "理想";
-  color: #86D73F;
-  font-family: "Noto Sans TC";
-  font-size: 32px;
-  display: inline-block;
-  position: absolute;
-  left: 140px;
-  top: 40px;
-  width: 64px;
-}
-/* line 73, ../SCSS/_index.scss */
-.header .green .p-result {
-  color: #86D73F;
-  margin-top: -13px;
-}
-/* line 76, ../SCSS/_index.scss */
-.header .green .p-result p {
-  font-size: 14px;
-}
-/* line 80, ../SCSS/_index.scss */
-.header .green .img {
-  background: #86D73F;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background-image: url(../images/icons_loop.png);
-  background-position: center center;
-  background-repeat: no-repeat;
-  position: absolute;
-  right: 0px;
-  bottom: 0px;
-}
+  height: 300px; }
+  .header .logo {
+    margin-left: 14.894%;
+    margin-top: 92px; }
+  .header form {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 74px;
+    margin-left: 10.4726%;
+    margin-right: 5.1758%; }
+  .header .result {
+    width: 120px;
+    height: 120px;
+    background: #FFD366;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 92px;
+    border-radius: 50%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-top: 46px;
+    cursor: pointer; }
+    .header .result:hover {
+      -webkit-box-shadow: 0 1px 6px 3px rgba(255, 196, 50, 0.64);
+      box-shadow: 0 1px 6px 3px rgba(255, 196, 50, 0.64); }
+    .header .result .p-result {
+      text-align: center;
+      font-family: "Open Sans";
+      font-size: 24px;
+      color: #424242;
+      line-height: 25px;
+      text-transform: capitalize; }
+  .header .good {
+    border: 6px solid #86D73F;
+    background: #424242;
+    position: relative; }
+    .header .good:after {
+      content: "理想";
+      color: #86D73F;
+      font-family: "Noto Sans TC";
+      font-size: 32px;
+      display: inline-block;
+      position: absolute;
+      left: 140px;
+      top: 40px;
+      width: 128px; }
+    .header .good .p-result {
+      color: #86D73F;
+      margin-top: -13px; }
+      .header .good .p-result p {
+        font-size: 14px; }
+    .header .good .img {
+      background: #86D73F;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-image: url(../images/icons_loop.png);
+      background-position: center center;
+      background-repeat: no-repeat;
+      position: absolute;
+      right: 0px;
+      bottom: 0px; }
+  .header .light {
+    border: 6px solid #31BAF9;
+    background: #424242;
+    position: relative; }
+    .header .light:after {
+      content: "過輕";
+      color: #31BAF9;
+      font-family: "Noto Sans TC";
+      font-size: 32px;
+      display: inline-block;
+      position: absolute;
+      left: 140px;
+      top: 40px;
+      width: 128px; }
+    .header .light .p-result {
+      color: #31BAF9;
+      margin-top: -13px; }
+      .header .light .p-result p {
+        font-size: 14px; }
+    .header .light .img {
+      background: #31BAF9;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-image: url(../images/icons_loop.png);
+      background-position: center center;
+      background-repeat: no-repeat;
+      position: absolute;
+      right: 0px;
+      bottom: 0px; }
+  .header .heavy {
+    border: 6px solid #FF982D;
+    background: #424242;
+    position: relative; }
+    .header .heavy:after {
+      content: "過重";
+      color: #FF982D;
+      font-family: "Noto Sans TC";
+      font-size: 32px;
+      display: inline-block;
+      position: absolute;
+      left: 140px;
+      top: 40px;
+      width: 128px; }
+    .header .heavy .p-result {
+      color: #FF982D;
+      margin-top: -13px; }
+      .header .heavy .p-result p {
+        font-size: 14px; }
+    .header .heavy .img {
+      background: #FF982D;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-image: url(../images/icons_loop.png);
+      background-position: center center;
+      background-repeat: no-repeat;
+      position: absolute;
+      right: 0px;
+      bottom: 0px; }
+  .header .light-fat {
+    border: 6px solid #FF6C03;
+    background: #424242;
+    position: relative; }
+    .header .light-fat:after {
+      content: "輕度肥胖";
+      color: #FF6C03;
+      font-family: "Noto Sans TC";
+      font-size: 32px;
+      display: inline-block;
+      position: absolute;
+      left: 140px;
+      top: 40px;
+      width: 128px; }
+    .header .light-fat .p-result {
+      color: #FF6C03;
+      margin-top: -13px; }
+      .header .light-fat .p-result p {
+        font-size: 14px; }
+    .header .light-fat .img {
+      background: #FF6C03;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-image: url(../images/icons_loop.png);
+      background-position: center center;
+      background-repeat: no-repeat;
+      position: absolute;
+      right: 0px;
+      bottom: 0px; }
+  .header .middle-fat {
+    border: 6px solid #FF6C03;
+    background: #424242;
+    position: relative; }
+    .header .middle-fat:after {
+      content: "中度肥胖";
+      color: #FF6C03;
+      font-family: "Noto Sans TC";
+      font-size: 32px;
+      display: inline-block;
+      position: absolute;
+      left: 140px;
+      top: 40px;
+      width: 128px; }
+    .header .middle-fat .p-result {
+      color: #FF6C03;
+      margin-top: -13px; }
+      .header .middle-fat .p-result p {
+        font-size: 14px; }
+    .header .middle-fat .img {
+      background: #FF6C03;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-image: url(../images/icons_loop.png);
+      background-position: center center;
+      background-repeat: no-repeat;
+      position: absolute;
+      right: 0px;
+      bottom: 0px; }
+  .header .too-fat {
+    border: 6px solid #FF1200;
+    background: #424242;
+    position: relative; }
+    .header .too-fat:after {
+      content: "重度肥胖";
+      color: #FF1200;
+      font-family: "Noto Sans TC";
+      font-size: 32px;
+      display: inline-block;
+      position: absolute;
+      left: 140px;
+      top: 40px;
+      width: 128px; }
+    .header .too-fat .p-result {
+      color: #FF1200;
+      margin-top: -13px; }
+      .header .too-fat .p-result p {
+        font-size: 14px; }
+    .header .too-fat .img {
+      background: #FF1200;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-image: url(../images/icons_loop.png);
+      background-position: center center;
+      background-repeat: no-repeat;
+      position: absolute;
+      right: 0px;
+      bottom: 0px; }
 
-/* line 95, ../SCSS/_index.scss */
 .all-result {
   max-width: 1024px;
-  margin: 0 auto;
-}
-/* line 98, ../SCSS/_index.scss */
-.all-result .bmirecord {
-  font-family: "Noto Sans TC";
-  font-size: 24px;
-  display: block;
-  margin-top: 48px;
-  margin-bottom: 36px;
-  width: 100%;
-  text-align: center;
-}
-/* line 107, ../SCSS/_index.scss */
-.all-result .eachrecord {
-  background: #FFFFFF;
-  height: 62px;
-  width: 60.9375%;
-  margin: 0 auto 16px auto;
-  font-family: "Noto Sans TC";
-  box-sizing: border-box;
-}
-/* line 115, ../SCSS/_index.scss */
-.all-result .eachrecord p {
-  display: inline-block;
-}
-/* line 118, ../SCSS/_index.scss */
-.all-result .eachrecord p:nth-child(odd) {
-  margin-top: 21px;
-  font-size: 20px;
-  color: #4A4A4A;
-  margin-right: 42px;
-}
-/* line 124, ../SCSS/_index.scss */
-.all-result .eachrecord p:nth-child(even) {
-  margin-top: 25px;
-  margin-right: 7px;
-  vertical-align: top;
-  font-size: 12px;
-  color: #424242;
-}
-/* line 131, ../SCSS/_index.scss */
-.all-result .eachrecord p:nth-child(1) {
-  margin-left: 19px;
-  margin-right: 70px;
-}
-/* line 135, ../SCSS/_index.scss */
-.all-result .eachrecord p:nth-child(7) {
-  margin-right: 52px;
-}
-/* line 139, ../SCSS/_index.scss */
-.all-result .eachrecord.green {
-  border-left: 7px solid  #86D73F;
-}
+  margin: 0 auto; }
+  .all-result .bmirecord {
+    font-family: "Noto Sans TC";
+    font-size: 24px;
+    display: block;
+    margin-top: 48px;
+    margin-bottom: 36px;
+    width: 100%;
+    text-align: center; }
+  .all-result .eachrecord {
+    background: #FFFFFF;
+    height: 62px;
+    width: 60.9375%;
+    margin: 0 auto 16px auto;
+    font-family: "Noto Sans TC";
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+    .all-result .eachrecord p {
+      display: inline-block; }
+    .all-result .eachrecord p:nth-child(odd) {
+      margin-top: 21px;
+      font-size: 20px;
+      color: #4A4A4A;
+      margin-right: 42px; }
+    .all-result .eachrecord p:nth-child(even) {
+      margin-top: 25px;
+      margin-right: 7px;
+      vertical-align: top;
+      font-size: 12px;
+      color: #424242; }
+    .all-result .eachrecord p:nth-child(1) {
+      margin-left: 19px;
+      margin-right: 70px; }
+    .all-result .eachrecord p:nth-child(7) {
+      margin-right: 52px; }
+  .all-result .eachrecord.good {
+    border-left: 7px solid  #86D73F; }
+  .all-result .eachrecord.light {
+    border-left: 7px solid  #31BAF9; }
+  .all-result .eachrecord.heavy {
+    border-left: 7px solid  #FF982D; }
+  .all-result .eachrecord.light-fat, .all-result .eachrecord.middle-fat {
+    border-left: 7px solid  #FF6C03; }
+  .all-result .eachrecord.too-fat {
+    border-left: 7px solid  #FF1200; }
 
-/* line 145, ../SCSS/_index.scss */
 .footer {
   width: 100%;
   background: #FFD366;
   height: 90px;
   background-image: url("../images/BMICLogo_B.png");
   background-repeat: no-repeat;
-  background-position: center center;
-}
+  background-position: center center; }

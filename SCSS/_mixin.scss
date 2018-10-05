@@ -37,3 +37,41 @@ $font-awe: "Font Awesome 5 Free";
     // width: image-width("../images/#{$name}.#{$bg}");
     // height: image-height("../images/#{$name}.#{$bg}");
 }
+
+@mixin p-result-content($color-name,$color,$str){
+    .#{$color-name}{
+        border: 6px solid $color;
+        background: #424242;
+        position: relative;
+        &:after{
+            content: "#{$str}";
+            color: $color;
+            font-family: $font-ch;
+            font-size: 32px;
+            display: inline-block;
+            position: absolute;
+            left:140px;
+            top:40px;
+            width: 128px;
+        }
+        .p-result{
+            color: $color;
+            margin-top: -13px;
+            p{
+                font-size:14px;
+            }
+        }
+        .img{
+            background: $color;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-image: url(../images/icons_loop.png);
+            background-position: center center;
+            background-repeat: no-repeat;
+            position: absolute;
+            right:0px;
+            bottom:0px;
+        }
+    }
+}

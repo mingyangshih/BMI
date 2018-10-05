@@ -55,42 +55,14 @@ html{
             text-transform: capitalize;
         }    
     }  
-    .green{
-        border: 6px solid #86D73F;
-        background: #424242;
-        position: relative;
-        &:after{
-            content: "理想";
-            color: #86D73F;
-            font-family: $font-ch;
-            font-size: 32px;
-            display: inline-block;
-            position: absolute;
-            left:140px;
-            top:40px;
-            width: 64px;
-        }
-        .p-result{
-            color: #86D73F;
-            margin-top: -13px;
-            p{
-                font-size:14px;
-            }
-        }
-        .img{
-            background: #86D73F;
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-            background-image: url(../images/icons_loop.png);
-            background-position: center center;
-            background-repeat: no-repeat;
-            position: absolute;
-            right:0px;
-            bottom:0px;
-        }
-    } 
+    @include p-result-content(good,#86D73F,理想);
+    @include p-result-content(light,#31BAF9,過輕);
+    @include p-result-content(heavy,#FF982D,過重);
+    @include p-result-content(light-fat,#FF6C03,輕度肥胖);
+    @include p-result-content(middle-fat,#FF6C03,中度肥胖);
+    @include p-result-content(too-fat,#FF1200,重度肥胖);
 }
+
 // main
 .all-result{
     max-width: 1024px;
@@ -136,8 +108,20 @@ html{
             margin-right: 52px;
         }
     }
-    .eachrecord.green{
+    .eachrecord.good{
         border-left: 7px solid  #86D73F;
+    }
+    .eachrecord.light{
+        border-left: 7px solid  #31BAF9;
+    }
+    .eachrecord.heavy{
+        border-left: 7px solid  #FF982D;
+    }
+    .eachrecord.light-fat,.eachrecord.middle-fat{
+        border-left: 7px solid  #FF6C03;
+    }
+    .eachrecord.heavy{
+        border-left: 7px solid  #FF1200;
     }
 }
 
