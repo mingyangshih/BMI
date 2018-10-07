@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -42,6 +43,33 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0; }
+
+.header .height, .header .weight {
+  font-family: "Noto Sans TC";
+  display: block;
+  color: #FFD366;
+  font-size: 18px;
+  margin-bottom: 7px; }
+
+.header .input-height, .header .input-weight {
+  display: block;
+  font-family: "Noto Sans TC";
+  background: rgba(255, 255, 255, 0.18);
+  border: 2px solid #FFD366;
+  color: rgba(255, 255, 255, 0.5);
+  width: 250px;
+  height: 40px;
+  font-size: 24px;
+  line-height: 28px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 14px;
+  border-radius: 10px;
+  margin-bottom: 23px;
+  outline: none; }
+  .header .input-height:hover, .header .input-weight:hover {
+    -webkit-box-shadow: 0 1px 6px 3px rgba(255, 196, 50, 0.64);
+    box-shadow: 0 1px 6px 3px rgba(255, 196, 50, 0.64); }
 
 .header .height, .header .weight {
   font-family: "Noto Sans TC";
@@ -318,7 +346,7 @@ html {
     box-sizing: border-box; }
     .all-result .eachrecord p {
       display: inline-block; }
-    .all-result .eachrecord p:nth-child(odd) {
+    .all-result .eachrecord p:nth-child(3), .all-result .eachrecord p:nth-child(5) {
       margin-top: 21px;
       font-size: 20px;
       color: #4A4A4A;
@@ -329,21 +357,39 @@ html {
       vertical-align: top;
       font-size: 12px;
       color: #424242; }
-    .all-result .eachrecord p:nth-child(1) {
-      margin-left: 19px;
-      margin-right: 70px; }
     .all-result .eachrecord p:nth-child(7) {
-      margin-right: 52px; }
+      margin-right: 52px;
+      font-size: 20px; }
   .all-result .eachrecord.good {
     border-left: 7px solid  #86D73F; }
+    .all-result .eachrecord.good p:first-child {
+      margin-left: 19px;
+      margin-right: 70px;
+      font-size: 20px; }
   .all-result .eachrecord.light {
     border-left: 7px solid  #31BAF9; }
+    .all-result .eachrecord.light p:first-child {
+      margin-left: 19px;
+      margin-right: 70px;
+      font-size: 20px; }
   .all-result .eachrecord.heavy {
     border-left: 7px solid  #FF982D; }
+    .all-result .eachrecord.heavy p:first-child {
+      margin-left: 19px;
+      margin-right: 70px;
+      font-size: 20px; }
   .all-result .eachrecord.light-fat, .all-result .eachrecord.middle-fat {
     border-left: 7px solid  #FF6C03; }
+    .all-result .eachrecord.light-fat p:first-child, .all-result .eachrecord.middle-fat p:first-child {
+      margin-left: 19px;
+      margin-right: 37px;
+      font-size: 20px; }
   .all-result .eachrecord.too-fat {
     border-left: 7px solid  #FF1200; }
+    .all-result .eachrecord.too-fat p:first-child {
+      margin-left: 19px;
+      margin-right: 37px;
+      font-size: 20px; }
 
 .footer {
   width: 100%;
