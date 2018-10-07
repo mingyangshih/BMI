@@ -382,13 +382,13 @@ html {
     border-left: 7px solid  #FF6C03; }
     .all-result .eachrecord.light-fat p:first-child, .all-result .eachrecord.middle-fat p:first-child {
       margin-left: 19px;
-      margin-right: 37px;
+      margin-right: 30px;
       font-size: 20px; }
   .all-result .eachrecord.too-fat {
     border-left: 7px solid  #FF1200; }
     .all-result .eachrecord.too-fat p:first-child {
       margin-left: 19px;
-      margin-right: 37px;
+      margin-right: 30px;
       font-size: 20px; }
 
 .footer {
